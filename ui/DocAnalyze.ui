@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTreeView" name="treeView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>256</width>
+      <height>451</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTreeView" name="treeView_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>450</y>
+      <width>256</width>
+      <height>297</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QMdiArea" name="mdiArea">
+    <property name="geometry">
+     <rect>
+      <x>259</x>
+      <y>0</y>
+      <width>940</width>
+      <height>751</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Alt_t">
+    <property name="title">
+     <string>文件(Alt+F)</string>
+    </property>
+    <addaction name="action_s"/>
+    <addaction name="action_Q"/>
+   </widget>
+   <widget class="QMenu" name="menu_A">
+    <property name="title">
+     <string>分析(A)</string>
+    </property>
+    <addaction name="action_R"/>
+    <addaction name="action_W"/>
+    <addaction name="action"/>
+    <addaction name="separator"/>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+   </widget>
+   <widget class="QMenu" name="menu_W">
+    <property name="title">
+     <string>窗口(W)</string>
+    </property>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+    <addaction name="separator"/>
+    <addaction name="action_8"/>
+    <addaction name="action_9"/>
+    <addaction name="separator"/>
+    <addaction name="action_11"/>
+    <addaction name="action_12"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(H)</string>
+    </property>
+    <addaction name="action_A"/>
+   </widget>
+   <addaction name="menu_Alt_t"/>
+   <addaction name="menu_A"/>
+   <addaction name="menu_W"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCtrl_s">
+   <property name="text">
+    <string>Ctrl+s</string>
+   </property>
+  </action>
+  <action name="action_s">
+   <property name="icon">
+    <iconset>
+     <normaloff>../image/保存.png</normaloff>../image/保存.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(Ctrl+S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_Q">
+   <property name="text">
+    <string>退出(Q)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_R">
+   <property name="icon">
+    <iconset>
+     <normaloff>../image/全民朗读2.png</normaloff>../image/全民朗读2.png</iconset>
+   </property>
+   <property name="text">
+    <string>朗读(R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_W">
+   <property name="text">
+    <string>分词(W)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset>
+     <normaloff>../image/词云.png</normaloff>../image/词云.png</iconset>
+   </property>
+   <property name="text">
+    <string>生成词云</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="icon">
+    <iconset>
+     <normaloff>../image/爬虫-01.png</normaloff>../image/爬虫-01.png</iconset>
+   </property>
+   <property name="text">
+    <string>爬取信息</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>识别文字</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>关闭所有</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>平铺</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>层叠</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>下一个</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>前一个</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="text">
+    <string>关于(A)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
